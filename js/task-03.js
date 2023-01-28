@@ -12,3 +12,9 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+// const makeGallery = (imagesObj) => {
+
+// }
+
+// makeGallery(images);
