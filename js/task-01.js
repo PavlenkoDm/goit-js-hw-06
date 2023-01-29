@@ -1,5 +1,7 @@
-const findCategoriesAmount = () => {
-    const categoriesListEl = document.querySelector("#categories");
+const categoriesListEl = document.querySelector("#categories");
+
+
+const findCategoriesAmount = () => {    
     console.log(`Number of categories: ${categoriesListEl.children.length}`);
     console.log("");
 };
@@ -8,7 +10,6 @@ findCategoriesAmount();
 
 
 const makeCategoryElements = () => {
-  const categoriesListEl = document.querySelector("#categories");
   const categoriesChildrenArr = categoriesListEl.children;
 
   for (const item of categoriesChildrenArr) {

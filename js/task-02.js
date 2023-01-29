@@ -7,11 +7,10 @@ const ingredients = [
   'Condiments',
 ];
 
-
+const ingridientsListEl = document.querySelector("#ingredients");
 
 const makeIngridients = (someArr) => {
-  const ingridientsListEl = document.querySelector("#ingredients");
-
+  
   const arrOfItems = someArr.map(ingridient => {
     const element = document.createElement("li");
     element.textContent = ingridient;
