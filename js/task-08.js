@@ -10,12 +10,12 @@ function onSubmit(event) {
 
     if (inputEl.value.length <= 0 || passwordEl.value.length <= 0) alert("Всі поля мають бути заповнені");
 
-    const incomeFormObj = {
+    const userData = {
         [inputEl.getAttribute("name")]: inputEl.value,
         [passwordEl.getAttribute("name")]: passwordEl.value
     };
 
-    console.log(incomeFormObj);
+    console.log(userData);
 
     event.currentTarget.reset();
 }
