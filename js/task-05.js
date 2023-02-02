@@ -8,8 +8,9 @@ function onInput(event) {
     if (!event) nameOutEl.textContent = 'Anonymous';
     
     nameOutEl.textContent = nameInputEl.value;
+    
+    if (!nameInputEl.value.trim()) nameOutEl.textContent = 'Anonymous';
 
-    if (nameInputEl.value.length === 0) nameOutEl.textContent = 'Anonymous';
 }
 
 

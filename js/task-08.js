@@ -8,12 +8,15 @@ formEl.addEventListener("submit", onSubmit);
 function onSubmit(event) {
     event.preventDefault();
 
-    if (inputEl.value.length <= 0 || passwordEl.value.length <= 0) alert("Всі поля мають бути заповнені");
+    if (!inputEl.value.trim() || !passwordEl.value.trim()) {
+        alert("Всі поля мають бути заповнені");
+        return;
+    }
 
     const userData = {
         [inputEl.getAttribute("name")]: inputEl.value,
         [passwordEl.getAttribute("name")]: passwordEl.value
-    };
+    }
 
     console.log(userData);
 
